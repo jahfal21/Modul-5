@@ -14,7 +14,9 @@ namespace modul5_1302204034
 
         public SayaTubeVideo(string b)
         {
-             
+            //5. contract
+            //Contract.Requires(title != null);
+            //Contract.Requires(title.Length < 200);
             Random c = new Random();
             this.id = c.Next(0, 100000);
             this.title = b;
@@ -23,7 +25,16 @@ namespace modul5_1302204034
 
         public void IncreasePlayCount(int b)
         {
-            
+            // 5.try-catch 
+            //try
+            //{ 
+            //    if (b >= 10000000) throw new Exception("angka melebihi batas");
+            //    playCount = playCount + b;
+            // }
+            // catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            // }
             playCount += b;
         }
         public int GetPlaycount()
